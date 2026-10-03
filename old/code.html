@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#7df4ff", "on-primary": "#00363a", "background": "#121316", "surface-variant": "#343538", "on-primary-fixed-variant": "#004f54", "inverse-surface": "#e3e2e6", "on-background": "#e3e2e6", "on-error": "#690005", "error": "#ffb4ab", "primary-container": "#00f0ff", "secondary": "#ffb599", "on-secondary": "#5a1c00", "error-container": "#93000a", "surface": "#121316", "on-tertiary-fixed-variant": "#005236", "surface-container-highest": "#343538", "on-tertiary": "#003824", "tertiary-container": "#65f2b5", "tertiary-fixed": "#6ffbbe", "primary-fixed-dim": "#00dbe9", "surface-dim": "#121316", "surface-container-lowest": "#0d0e11", "secondary-container": "#ff5e00", "on-surface": "#e3e2e6", "on-surface-variant": "#b9cacb", "surface-container-low": "#1b1b1f", "tertiary": "#d8ffe7", "surface-container-high": "#292a2d", "on-primary-container": "#006970", "outline-variant": "#3b494b", "on-secondary-container": "#531900", "surface-bright": "#38393c", "inverse-primary": "#006970", "secondary-fixed": "#ffdbce", "outline": "#849495", "on-secondary-fixed-variant": "#7f2b00", "inverse-on-surface": "#303034", "tertiary-fixed-dim": "#4edea3", "secondary-fixed-dim": "#ffb599", "on-error-container": "#ffdad6", "primary": "#dbfcff", "surface-container": "#1f1f23", "on-tertiary-fixed": "#002113", "on-primary-fixed": "#002022", "on-secondary-fixed": "#370e00", "surface-tint": "#00dbe9", "on-tertiary-container": "#006d4a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "margin": "2rem", "gutter-mobile": "0.75rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "label-numeric": ["JetBrains Mono"], "display-hero": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "cta-button": ["Plus Jakarta Sans"], "label-badge": ["JetBrains Mono"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-numeric": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "display-hero": ["44px", { "lineHeight": "48px", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-hero-mobile": ["34px", { "lineHeight": "38px", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "cta-button": ["16px", { "lineHeight": "20px", "fontWeight": "700" }], "label-badge": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-container selection:text-white"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 flex flex-col"><div class="h-6 bg-secondary-container px-margin-mobile flex items-center justify-between text-white"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[13px]">local_shipping</span><span class="font-label-badge text-label-badge uppercase tracking-wider">Frete Grátis Brasil</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[13px]">timer</span><span class="font-label-numeric text-label-badge">OFERTA ENCERRA EM 14:59</span></div></div><div class="h-14 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tighter text-on-surface">APEX<span class="text-primary-container font-headline-md text-headline-md">CHRONO</span></span></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[14px]">verified</span><span class="font-label-badge text-label-badge uppercase text-tertiary-fixed-dim">Original</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 bg-surface"><div class="flex flex-col w-full selection:bg-secondary-container selection:text-white">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 -right-20 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- 1. HERO SECTION -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col items-center">
+<!-- Exclusivity Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge text-primary-fixed uppercase tracking-wider">Lançamento • Aço Inox Milanês</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-center tracking-tight max-w-sm mb-space-xs">
+        O Controle da Sua Vida, Saúde e Rotina em um Só Toque
+      </h1>
+<!-- Subheadline -->
+<p class="font-body-md text-body-md text-on-surface-variant text-center max-w-xs mb-space-md">
+        Design refinado em malha milanesa, chamadas telefônicas via Bluetooth 5.3 nítidas e monitoramento biométrico contínuo de alta precisão.
+      </p>
+<!-- Hero Product Media Showcase -->
+<div class="relative w-full max-w-xs flex items-center justify-center mb-space-md">
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/20 to-transparent rounded-full blur-2xl -z-10"></div>
+<img alt="Smartwatch Apex Chrono em aço inoxidável milanês preto com mostrador digital de alta resolução" class="w-full h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)] transform transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2d5iaTmJAQ-J6dl-rH9-eRbVBcIgP7TK3krJA-yUqxfYbnhFBy3HvUMXGlhbLcJEaMUHl6XUzhBK8Z9rPf01j9jUxVaHeAtG9dfu56BiAVuD9ItcMfcFubhF0SCFf_IpuTeqSCycvsmSsumhFFzIeUNH4LefXJtZfJCrio0Fz-NR6cUL9hIELWWgHoquGXcwDrSKxMuEcVW5KwP9rLRGJEOn1d8yDFlvY_b0M9trxoFwDZ0cAlRSG-lFg8H8kJfJozQ"/>
+<!-- Free Second Silicone Strap Included Flag -->
+<div class="absolute bottom-2 right-1 bg-surface-container-highest/90 backdrop-blur-md px-2.5 py-1.5 rounded-xl shadow-lg flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">redeem</span>
+<span class="font-label-badge text-label-badge text-on-surface font-semibold">+ Pulseira Silicone Inclusa</span>
+</div>
+</div>
+<!-- Social Proof Snippet -->
+<div class="flex items-center gap-2 mb-space-md">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-numeric text-label-badge text-on-surface font-bold">4.9/5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2.840 avaliações no Brasil)</span>
+</div>
+<!-- Pricing Offer Card -->
+<div class="w-full bg-surface-container/70 backdrop-blur-xl rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary-container text-white px-3 py-1 rounded-bl-lg font-label-badge text-label-badge tracking-wider font-bold">
+          ECONOMIZE R$ 102,00
+        </div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline line-through">De R$ 289,00</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary-fixed tracking-tight">R$ 187,00</span>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary-fixed-dim uppercase">5% OFF no Pix</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ou em até <strong>12x de R$ 18,90</strong> no cartão de crédito</span>
+</div>
+<!-- Primary CTA Trigger -->
+<a class="w-full bg-gradient-to-r from-secondary-container to-amber-600 text-white font-cta-button text-cta-button py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-secondary-container/30 active:scale-95 transition-all text-center tracking-wide" href="#checkout-box">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>GARANTIR COM FRETE GRÁTIS</span>
+</a>
+<!-- Trust Mini Badges -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">verified_user</span>
+<span class="font-body-sm text-body-sm text-[11px]">30 Dias de Teste</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary-container">local_shipping</span>
+<span class="font-body-sm text-body-sm text-[11px]">Envio Rastreado</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">assignment</span>
+<span class="font-body-sm text-body-sm text-[11px]">Com Nota Fiscal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. CONNECTIVITY & SMART NOTIFICATIONS -->
+<section class="px-margin-mobile pt-space-lg pb-space-lg flex flex-col gap-space-md">
+<!-- Section Header -->
+<div class="flex flex-col text-center items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-primary-container">Nunca Mais Perca Nada</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Conexão Total no Seu Pulso</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+          Mensagens, alertas e ligações imediatas sem precisar tirar o smartphone do bolso ou da bolsa.
+        </p>
+</div>
+<!-- Feature Image Showcase 1 (Notifications) -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low p-2">
+<img alt="Demonstração das notificações instantâneas em tela cheia do smartwatch com preview de mensagem" class="w-full h-auto rounded-xl object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByr7nSAuOm527nkK00_wSS82YqxUlzpteBwCZ2TLU2MMLMlp7bf19WolygySa4gxxXQWxN4L9iUlJ5eDyuN8zgzmMMaQEE-0t7SBR2eiG6i3OQgTOK400Nkf8ecd2KMpijBVLsQlHuzZCiuRJIkgn-Cci1FzSIUhDGGH33_7kGqD0jhrwngkTAC2g8sqfKMP-NxLp85LcJOQrZuzVojj78lJ0ibLWjKD6R5nBCMJT3LimtqXa36xpMezyi5VkMDNG0Eg"/>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-highest/90 backdrop-blur-md p-space-sm rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">notifications_active</span>
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">Leitura instantânea de textos completos</span>
+</div>
+</div>
+</div>
+<!-- App Compatibility Grid -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col gap-space-sm">
+<span class="font-label-badge text-label-badge uppercase text-outline">Compatibilidade Nativamente Integrada</span>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> WhatsApp
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span> Instagram
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Chamadas
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> SMS
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span> Telegram
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Facebook
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-700"></span> LinkedIn
+          </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> E-mail
+          </span>
+</div>
+</div>
+<!-- Feature Image Showcase 2 (Bluetooth Calls & AI Voice) -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low p-2">
+<img alt="Função de chamadas Bluetooth 5.3 com viva-voz de alta definição e acionamento de voz por inteligência artificial" class="w-full h-auto rounded-xl object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHOV_nYjej8mxbeJkn5kBT25tZOs1AYFfv7NgW8aycUD_gB8HVV_usHM0NBhbiLJH6nM-jViSOlmXfMiYtkXkwmLAW92ARS4zXIRnKPNldp_LDsaRJ_8kINKrakGvepd70YXShR9RLJ03EJYa9Z-avxphw47ybHtzxHlia2ooH8j7ij7rVFDuRMs7Mwjbib62oWwx3zO88LMcdh4oLiEh2qBm6DYKjiLkaVF8ql_2JI-T5jfR8rLmbPWfF-1CuuOb0-A"/>
+<div class="p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">phone_in_talk</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Chamadas Bluetooth 5.3 &amp; Voz AI</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Microfone embutido com cancelamento acústico de ruído, alto-falante estéreo potente e teclado numérico discador touch screen.
+          </p>
+</div>
+</div>
+</section>
+<!-- 3. HEALTH & WELLNESS TELEMETRY -->
+<section class="px-margin-mobile pt-space-lg pb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col text-center items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-tertiary-fixed-dim">Bio-Sensores Avançados</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Seu Médico &amp; Treinador 24/7</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+          Acompanhamento fisiológico preciso para potencializar seu rendimento diário e proteger sua saúde.
+        </p>
+</div>
+<!-- BPM Animated Radar Card -->
+<div class="bg-surface-container p-space-md rounded-2xl shadow-md flex items-center justify-between relative overflow-hidden">
+<div class="flex flex-col gap-1 z-10">
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[20px] animate-pulse">favorite</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider font-bold">Cardíaco em Tempo Real</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">72 <span class="text-body-sm font-normal text-on-surface-variant">BPM</span></span>
+<span class="font-body-sm text-body-sm text-tertiary-fixed-dim">Ritmo estável • Alerta de arritmia ativo</span>
+</div>
+<!-- Live ECG Micro Wave SVG -->
+<div class="w-32 h-14 flex items-center justify-center opacity-80">
+<svg class="w-full h-full text-error" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 100 40">
+<path d="M0 20 L25 20 L30 8 L35 32 L40 12 L45 25 L50 20 L100 20"></path>
+</svg>
+</div>
+</div>
+<!-- 6-Grid Health & Lifestyle Matrix -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Sleep Monitor -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">bedtime</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Sono Inteligente</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Monitora fases REM, sono profundo, leve e emite relatório matinal.
+          </p>
+</div>
+<!-- Blood Pressure -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">vital_signs</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Pressão Arterial</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Estimativa de oxigenação e pressão com histórico no aplicativo.
+          </p>
+</div>
+<!-- Hydration Reminder -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Hidratação Guiada</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Vibrações silenciosas nos horários certos para você beber água.
+          </p>
+</div>
+<!-- Medicine Reminder -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">medication</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Medicamentos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Alarmes nominais programáveis para suplementos e remédios.
+          </p>
+</div>
+<!-- Sedentary Alert -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">chair_alt</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Anti-Sedentarismo</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Avisa quando levantar, esticar o corpo e melhorar a circulação.
+          </p>
+</div>
+<!-- Calorie & Workout Counter -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-amber-300">
+<span class="material-symbols-outlined text-[18px]">directions_run</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Passos &amp; Calorias</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Metas diárias de quilometragem, tempo ativo e calorias queimadas.
+          </p>
+</div>
+</div>
+</section>
+<!-- 4. WATCH FACES & CUSTOMIZATION -->
+<section class="px-margin-mobile pt-space-lg pb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col text-center items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-primary-container">Estilo Sem Limites</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Centenas de Mostradores</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+          Mude de mostrador a cada momento do seu dia ou coloque sua própria foto favorita de papel de parede.
+        </p>
+</div>
+<!-- Feature Image Showcase 3 (Watch Faces) -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low p-2">
+<img alt="Mostradores personalizáveis e integração direta com galeria de imagens do smartphone" class="w-full h-auto rounded-xl object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVXdr-IptOLZHpCZmQ8PghWxuF-_sMLFtw_pt4dSOap6ZmReMlBbxJDzmQ4YCpOrZedhuYkejBOnJek_awiAG8ajaXgJe9BxMo-9EZcYi5FSHqj_kbGuwOCts3s1du5vGGwfHj0ygvqCzxIBgcqY0_oB2hUzmcSArA2RNME8hp7cOPwRA8jAFssTNb1Z1PZj2iPErEQBn76YmdGDiWNHeWOJEoAVgIKwwFj-vtry9YfIa6i-NLzPqhXBNWv_KtGgfD3w"/>
+<div class="p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">palette</span>
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">+500 Watch Faces Gratuitas</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-badge text-label-badge">App Oficial</span>
+</div>
+</div>
+</section>
+<!-- 5. TECHNICAL SPECIFICATIONS (SCAN-FRIENDLY TABLE) -->
+<section class="px-margin-mobile pt-space-lg pb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col text-center items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Ficha Técnica</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Construção Premium &amp; Hardware</h2>
+</div>
+<div class="bg-surface-container-low rounded-2xl overflow-hidden shadow-md divide-y divide-surface-container-highest/40">
+<div class="p-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-container">bluetooth</span> Conectividade
+          </span>
+<span class="font-label-numeric text-label-badge text-on-surface font-semibold">Bluetooth 5.3 Dual BLE</span>
+</div>
+<div class="p-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">translate</span> Idioma do Sistema
+          </span>
+<span class="font-label-numeric text-label-badge text-on-surface font-semibold">100% Português (Brasil)</span>
+</div>
+<div class="p-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-amber-300">battery_charging_full</span> Autonomia da Bateria
+          </span>
+<span class="font-label-numeric text-label-badge text-on-surface font-semibold">5 a 7 dias contínuos</span>
+</div>
+<div class="p-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">watch</span> Material da Caixa
+          </span>
+<span class="font-label-numeric text-label-badge text-on-surface font-semibold">Liga Aeroespacial Escovada</span>
+</div>
+<div class="p-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">straighten</span> Pulseiras Inclusas
+          </span>
+<span class="font-label-numeric text-label-badge text-on-surface font-semibold">1x Aço Milanês + 1x Silicone</span>
+</div>
+<div class="p-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">phonelink_setup</span> Compatibilidade
+          </span>
+<span class="font-label-numeric text-label-badge text-on-surface font-semibold">Android 5.0+ e iOS 9.0+</span>
+</div>
+</div>
+</section>
+<!-- 6. REAL TESTIMONIALS & AUTHENTICITY -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col text-center items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-tertiary-fixed-dim">Avaliações Verificadas</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Quem Comprou, Recomenda</h2>
+</div>
+<!-- Testimonial 1 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-primary-container">
+              RC
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">Rodrigo Camargo</span>
+<span class="font-body-sm text-body-sm text-[11px] text-tertiary-fixed-dim flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> Comprador Verificado • São Paulo
+              </span>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+          "A malha de aço milanesa é surreal, dá um ar de relógio de R$ 2.000. Faço e atendo ligações no trânsito pelo microfone dele com muita clareza. Vale cada centavo!"
+        </p>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-secondary">
+              ML
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">Mariana Lins</span>
+<span class="font-body-sm text-body-sm text-[11px] text-tertiary-fixed-dim flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> Comprador Verificado • Curitiba
+              </span>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+          "Chegou super rápido em 4 dias. A bateria durou quase 6 dias inteiros no meu primeiro ciclo. O alerta de água e as notificações do WhatsApp me ajudam muito no trabalho."
+        </p>
+</div>
+</section>
+<!-- 7. FAQ ACCORDION -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col text-center items-center gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Transparência Total</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Perguntas Frequentes</h2>
+</div>
+<div class="flex flex-col gap-2">
+<details class="bg-surface-container-low rounded-xl p-space-sm group">
+<summary class="font-headline-sm text-[15px] text-on-surface font-semibold cursor-pointer list-none flex items-center justify-between">
+<span>O relógio funciona em qualquer celular?</span>
+<span class="material-symbols-outlined text-[18px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2">
+            Sim! O relógio é compatível com qualquer modelo de smartphone iOS (iPhone) e Android via aplicativo oficial gratuito com pareamento Bluetooth instantâneo.
+          </p>
+</details>
+<details class="bg-surface-container-low rounded-xl p-space-sm group">
+<summary class="font-headline-sm text-[15px] text-on-surface font-semibold cursor-pointer list-none flex items-center justify-between">
+<span>Os menus e notificações vêm em Português?</span>
+<span class="material-symbols-outlined text-[18px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2">
+            Sim! Toda a interface, menus de navegação, manual e alertas estão 100% traduzidos em Português do Brasil de fábrica.
+          </p>
+</details>
+<details class="bg-surface-container-low rounded-xl p-space-sm group">
+<summary class="font-headline-sm text-[15px] text-on-surface font-semibold cursor-pointer list-none flex items-center justify-between">
+<span>Como funciona a garantia de 30 dias?</span>
+<span class="material-symbols-outlined text-[18px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2">
+            Você tem 30 dias corridos após o recebimento para testar o smartwatch. Se por qualquer motivo não ficar satisfeito, devolvemos 100% do seu dinheiro sem perguntas ou burocracia.
+          </p>
+</details>
+<details class="bg-surface-container-low rounded-xl p-space-sm group">
+<summary class="font-headline-sm text-[15px] text-on-surface font-semibold cursor-pointer list-none flex items-center justify-between">
+<span>Qual o prazo de envio e rastreio?</span>
+<span class="material-symbols-outlined text-[18px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2">
+            O envio é prioritário com seguro dos Correios. O código de rastreamento oficial é enviado por WhatsApp e e-mail em até 24 horas úteis para você acompanhar cada etapa.
+          </p>
+</details>
+</div>
+</section>
+<!-- 8. CONVERSION CHECKOUT BOX (TARGET ANCHOR) -->
+<section class="px-margin-mobile pt-space-md pb-space-xl flex flex-col items-center" id="checkout-box">
+<div class="w-full bg-gradient-to-b from-surface-container to-surface-container-low p-space-md rounded-2xl shadow-2xl flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Oferta Oficial Liberada</span>
+<span class="font-body-sm text-body-sm text-tertiary-fixed-dim font-medium">Estoque Restante: 18 Unidades no Lote</span>
+</div>
+</div>
+<!-- Order Summary Detail -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex flex-col gap-1 text-on-surface">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">1x Smartwatch Apex Inox Premium</span>
+<span class="font-label-numeric">R$ 187,00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">1x Pulseira Esportiva Silicone (Brinde)</span>
+<span class="font-label-numeric text-tertiary-fixed-dim">GRÁTIS</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Frete Expresso Brasil com Seguro</span>
+<span class="font-label-numeric text-tertiary-fixed-dim">GRÁTIS</span>
+</div>
+</div>
+<!-- Big Conversion Button -->
+<button class="w-full bg-gradient-to-r from-secondary-container to-amber-600 hover:opacity-95 text-white font-cta-button text-cta-button py-4 px-4 rounded-xl flex items-center justify-center gap-2 shadow-xl shadow-secondary-container/40 active:scale-98 transition-all tracking-wide cursor-pointer" id="btn-buy-primary" type="button">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span>COMPRAR COM FRETE GRÁTIS</span>
+</button>
+<!-- Security seals row -->
+<div class="flex items-center justify-center gap-4 text-outline font-label-badge text-[10px] uppercase">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock</span> SSL 256-Bit</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shield</span> Garantia Blindada</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">local_shipping</span> Correios Oficial</span>
+</div>
+</div>
+</section>
+</div>
+<!-- 9. STICKY BOTTOM CART BAR -->
+<div class="fixed bottom-0 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-xl px-margin-mobile py-2.5 shadow-[0_-8px_24px_rgba(0,0,0,0.7)] flex items-center justify-between pb-safe">
+<div class="flex flex-col">
+<span class="font-label-badge text-[10px] uppercase text-tertiary-fixed-dim font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span> Frete Grátis Ativo
+      </span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary-fixed">R$ 187,00</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">no Pix</span>
+</div>
+<span class="font-body-sm text-[10px] text-outline">ou 12x de R$ 18,90</span>
+</div>
+<a class="bg-gradient-to-r from-secondary-container to-amber-600 text-white font-cta-button text-[14px] py-2.5 px-5 rounded-xl shadow-lg shadow-secondary-container/30 active:scale-95 transition-transform flex items-center gap-1.5 font-bold" href="#checkout-box">
+<span>COMPRAR</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for purchase button click
+  document.getElementById('btn-buy-primary')?.addEventListener('click', function() {
+    this.classList.add('scale-95');
+    setTimeout(() => {
+      this.classList.remove('scale-95');
+      alert('Redirecionando para o ambiente seguro de pagamento oficial...');
+    }, 150);
+  });
+</script><footer class="w-full bg-surface-container-lowest px-margin-mobile pt-space-xl pb-space-xl pb-safe flex flex-col items-center gap-space-lg text-center mt-space-xl"><div class="grid grid-cols-2 gap-space-md w-full max-w-sm"><div class="p-space-md rounded-xl bg-surface-container flex flex-col items-center gap-space-xs text-center"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[26px]">gshield</span><span class="font-headline-sm text-headline-sm text-on-surface">Garantia 30 Dias</span><span class="font-body-sm text-body-sm text-on-surface-variant">Reembolso 100% incondicional sem burocracia</span></div><div class="p-space-md rounded-xl bg-surface-container flex flex-col items-center gap-space-xs text-center"><span class="material-symbols-outlined text-primary-container text-[26px]">lock</span><span class="font-headline-sm text-headline-sm text-on-surface">SSL Blindado</span><span class="font-body-sm text-body-sm text-on-surface-variant">Criptografia 256-bit ponta a ponta</span></div></div><div class="flex flex-col items-center gap-space-xs w-full"><span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-widest">Formas de Pagamento Seguras</span><div class="flex flex-wrap items-center justify-center gap-space-sm"><span class="px-space-sm py-1 rounded bg-surface-container-high font-label-badge text-label-badge text-on-surface">PIX IMEDIATO</span><span class="px-space-sm py-1 rounded bg-surface-container-high font-label-badge text-label-badge text-on-surface">ATÉ 12X CARTÃO</span><span class="px-space-sm py-1 rounded bg-surface-container-high font-label-badge text-label-badge text-on-surface">BOLETO BANCÁRIO</span></div></div><div class="flex flex-col items-center gap-space-xs"><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Apex Chrono Technologies © 2025. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p><p class="font-body-sm text-body-sm text-outline">São Paulo, Brasil • Suporte oficial 24/7</p></div></footer></main></body></html>

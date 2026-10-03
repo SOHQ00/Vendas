@@ -1,0 +1,38 @@
+# Ambientes e Credenciais Locais
+.env
+.env.*
+!.env.example
+.docs/meu_git.txt
+meu_git.txt
+
+# Configurações de IA e Agentes Locais
+.agents/
+.gemini/
+
+# Caches e Arquivos Temporários do Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+*~
+
+# Arquivos de IDE / Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs e Relatórios
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependências e Builds (caso sejam adicionados futuramente)
+node_modules/
+dist/
+build/
+.cache/
